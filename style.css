@@ -1,0 +1,271 @@
+/* =========================================
+   VARIABLES Y ESTILOS GLOBALES
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #FAFAFA;
+    /* Un gris/blanco muy limpio */
+    color: #4A3E3D;
+    /* Gris café oscuro */
+    font-family: 'Poppins', sans-serif;
+    /* Tipografía clara y moderna */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Evitamos que el padding ensanche los div */
+* {
+    box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER Y NAVEGACIÓN
+   ========================================= */
+.encabezado-principal {
+    background-color: #0B0F19;
+    /* blue oscuro tipo ss */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Header sticky (persistente en scroll) */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Navegación principal */
+.navegacion-principal {
+    padding: 13px 0;
+    /* Header de altura baja */
+}
+
+/* =========================================
+   HEADER - CONTENEDOR GENERAL - TODAS LAS PAGINAS
+   ========================================= */
+/* CONTENEDOR PRINCIPAL DEL HEADER */
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+
+/* LOGO */
+.logo-img {
+    height: 45px;
+}
+
+
+/* MENÚ */
+.menu-enlaces {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ENLACES */
+.menu-enlaces a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/* HOVER SIMPLE */
+.menu-enlaces a:hover {
+    opacity: 0.7;
+}
+
+/* =========================================
+   FIN DEL NAV - FIN DEL HEADER
+   ========================================= */
+
+
+/* =========================================
+   VIDEO REPRESENTATIVO - PAGINA INICIO
+   ========================================= */
+
+/* CONTENEDOR DEL VIDEO (caja principal: controla tamaño y espaciado) */
+.video-representativo {
+
+    /* limita el ancho del video */
+    max-width: 750px;
+
+    /* centra el contenedor y agrega espacio arriba/abajo */
+    margin: 60px auto;
+
+    /* espacio interno alrededor del video */
+    padding: 10px;
+}
+
+
+/* VIDEO DENTRO DEL CONTENEDOR (estilo del elemento video en sí) */
+.video-representativo video {
+
+    /* hace que el video ocupe todo el ancho del contenedor */
+    width: 100%;
+
+    /* bordes redondeados para estilo moderno */
+    border-radius: 12px;
+
+    /* elimina espacios raros debajo del video (comportamiento inline) */
+    display: block;
+}
+
+
+
+/* =========================================
+   SECCION: RUBRO, VISION Y MISION -
+   ========================================= */
+
+/* CONTENEDOR PRINCIPAL DE LAS TARJETAS */
+.contenedor-tarjetas-nosotros {
+
+    /* Activa flexbox para organizar las tarjetas en fila */
+    display: flex;
+
+    /* Espacio entre cada tarjeta */
+    gap: 20px;
+
+    /* Centra las tarjetas horizontalmente */
+    justify-content: center;
+
+    /* Permite que las tarjetas bajen en pantallas pequeñas */
+    flex-wrap: wrap;
+
+    /* Espacio arriba y abajo del contenedor + centrado horizontal */
+    margin: 50px auto;
+
+    /* Limita el ancho máximo del bloque */
+    max-width: 1000px;
+}
+
+
+
+/* ESTILO DE CADA TARJETA INDIVIDUAL */
+.tarjeta-nosotros {
+
+    /* Permite que todas las tarjetas crezcan igual */
+    flex: 1;
+
+    /* Evita que la tarjeta se haga demasiado pequeña */
+    min-width: 250px;
+
+    /* Espacio interno dentro de la tarjeta */
+    padding: 20px;
+
+    /* Bordes redondeados estilo moderno */
+    border-radius: 12px;
+
+    /* Fondo gris claro tipo Bootstrap */
+    background-color: #f8f9fa;
+
+    /* Centra el texto dentro de la tarjeta */
+    text-align: center;
+}
+
+/* =========================================
+   FIN PAGINA INICIO
+   ========================================= */
+
+
+
+/* =========================================
+   PROPIEDADES TARJETA PRODUCTOS - PAGINA MENU
+   ========================================= */
+
+.imagen-producto {
+    height: 160px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+
+/* =========================================
+   MAPA DE UBICACIÓN - PAGINA CONTACTO
+   ========================================= */
+
+.mapa-contacto {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FOOTER - TODAS LAS PAGINAS
+   ========================================= */
+
+/* FOOTER GENERAL */
+.pie-pagina-premium {
+    background-color: #FFFFFF;
+    color: #333333;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #EBEBEB;
+}
+
+
+/* EMPRESAS REFERENTES */
+.empresas-referenciales {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #EBEBEB;
+}
+
+
+/* TITULO */
+.titulo-referencial {
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: #999999;
+}
+
+
+/* CONTENEDOR DE LOGOS */
+.contenedor-logos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+/* LOGOS */
+.logo-partner {
+    height: 45px;
+}
+
+
+/* PARTE FINAL */
+.derechos-reservados {
+    text-align: left;
+    padding: 20px 368px;
+    margin-top: 30px;
+    font-size: 13px;
+    border-top: 1px solid #EBEBEB;
+
+}
+
+
+/* REDES SOCIALES */
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+
+/* ICONOS */
+.icono-social {
+    height: 29px;
+    margin: 10px;
+}
