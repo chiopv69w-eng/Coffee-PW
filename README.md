@@ -3,7 +3,10 @@
     <h1><b>Cloud Atlas Coffee ☕👾</b></h1>
     <p>FINAL PROYECT - PROGRAMACIÓN WEB - UPN - 2026.1</p>
   </center>
-</div>
+<p align="center">
+  <img src="BANNER DE CLOUD ATLAS COFFEE.png" alt="Cloude Atlas Coffee-Banner" width="100%">
+</p>
+  
 <p>
   Coffee-PW es una página web inspirada en el estilo de vida de los programadores, desarrolladores e ingenieros de sistemas, quienes saben que una buena línea de código casi siempre va acompañada de una excelente taza de café.
 
