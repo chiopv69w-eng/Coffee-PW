@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Atlas Coffee</title>
+    <link rel="icon" href="img/icons/favicon-1.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- CSS enlazado, se mantiene el estilo en archivo externo -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         HEADER Y NAVEGACIÓN
+         ========================== -->
+    <header class="encabezado-principal">
+
+        <nav class="navegacion-principal">
+            <div class="contenedor-header">
+
+                <!-- LOGO -->
+                <a href="inicio.html">
+                    <img src="img/logo/logo-11-Cloud-Atlas-Coffe.png" class="logo-img" alt="Logo">
+                </a>
+
+                <!-- MENÚ -->
+                <ul class="menu-enlaces">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Menú</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+
+    <!-- ==========================
+         SLIDER BOOTSTRAP
+         ========================== -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="img/slider/slider-contacto-1.jpg" class="d-block w-100" alt="..." height="550px">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider/slider-contacto-2.png" class="d-block w-100" alt="..." height="550px">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/slider/slider-contacto-3.png" class="d-block w-100" alt="..." height="550px">
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ==========================
+     FORMULARIO DE CONTACTO - BOOTSTRAP
+     ========================== -->
+    <section class="seccion-contacto py-5">
+        <div class="container" style="max-width: 650px;">
+
+            <div class="text-center mb-4">
+                <h2>Formulario de Contacto</h2>
+                <p class="text-muted">Déjanos tu mensaje y te responderemos pronto</p>
+            </div>
+
+            <!-- Card Bootstrap para mejor presentación -->
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-dark">
+                            Enviar mensaje
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div> -->
+
+
+
+
+
+
+    <!-- ======================================================
+        MAPA DE UBICACIÓN / TITULO DE UBICACION - CENTRADO
+    ====================================================== -->
+
+
+    <center>
+        <div class="mb-4">
+            <h2>UBICACION</h2>
+            <p class="text-muted">Como llegar</p>
+        </div>
+    </center>
+
+
+
+    <!-- ==========================
+        MAPA DE UBICACIÓN 
+    ========================== -->
+    <center>
+        <iframe class="mapa-contacto" src="https://www.google.com/maps?q=-12.08965,-77.05181&output=embed"
+            allowfullscreen loading="lazy">
+        </iframe>
+    </center>
+
+
+
+
+    <!-- ==========================
+         FOOTER / PIE DE PÁGINA
+         ========================== -->
+
+
+    <footer class="pie-pagina-premium">
+
+        <!-- EMPRESAS REFERENTES -->
+        <div class="empresas-referenciales">
+            <h4 class="titulo-referencial">Empresas Referentes</h4>
+
+            <div class="contenedor-logos">
+                <img src="img/logo/logo-2-starbucks.png" alt="Starbucks" class="logo-partner">
+                <img src="img/logo/logo-3-Costa-Coffee.png" alt="Costa Coffee" class="logo-partner">
+                <img src="img/logo/logo-4-pacificcoffee.png" alt="Pacific Coffee" class="logo-partner">
+            </div>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div class="derechos-reservados">
+
+            <div class="redes-sociales">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="img/logo/logo-5-instagram.png" class="icono-social">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="img/logo/logo-6.1-facebook.png" class="icono-social">
+                </a>
+                <a href="https://tiktok.com" target="_blank">
+                    <img src="img/logo/logo-7-tiktok.png" class="icono-social">
+                </a>
+            </div>
+
+
+
+            <!-- LOGO UPN -->
+            <center>
+                <img src="img/logo/logo-9-UPN.png" alt="Logo UPN" width="120px">
+            </center>
+
+            <!-- CONTACTO -->
+            <p>📞 Contacto: +51 959 758 058</p>
+
+
+            <p>© 2026 Cloud Atlas Coffee | UPN – Ing. de Sistemas</p>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS DE BOOTSTRAP (COMPONENTES INTERACTIVOS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
